@@ -31,7 +31,9 @@ useEffect(() => {
       <div className="App">
 
         {movie && (
-          <><MovieCard movie={movie} showLink={false}/></>
+          <><MovieCard movie={movie} showLink={false}/>
+          <p className="tagline">{movie.tagline}</p>
+          <p className="overview">{movie.overview}</p></>
         )}
       </div>
     )
