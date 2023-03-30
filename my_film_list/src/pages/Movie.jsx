@@ -2,6 +2,7 @@
 import { useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import MovieCard from "../components/MovieCard";
+import "./movie.css"
 
 
 
@@ -28,10 +29,10 @@ useEffect(() => {
 
 
     return (
-      <div className="App">
+      <div className="film-page">
 
         {movie && (
-          <><MovieCard movie={movie} showLink={false}/>
+          <><MovieCard  className="movie-card" movie={movie} showLink={false}/>
           <p className="tagline">{movie.tagline}</p>
           <p className="overview">{movie.overview}</p></>
         )}
